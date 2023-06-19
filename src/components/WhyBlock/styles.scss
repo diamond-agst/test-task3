@@ -1,0 +1,154 @@
+.whyBlockWrapper{
+    margin-bottom: 146px;
+    .headingWhy{
+        display: flex;
+        justify-content: center;
+        h1{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 78px;
+            line-height: 70px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    .whyBlocks{
+        width: 100%;
+        padding: 0px 140px;
+        position: relative;
+        .whyTopBlocks{
+            padding-top: 35px;
+            border-top: solid 1px #979797; 
+            margin-top: 20px;
+        }
+        .whyTopBlocks, .whyBottomBlocks{
+            display: flex;
+            justify-content: center;    
+            .whyBlock{
+                position: relative;
+                background: #8836AE;
+                width: 595px;
+                border-radius: 35px;
+                padding: 34px 63px;
+                height: 380px;
+                z-index: 99999;
+                &:first-child{
+                    margin-right: 15px;
+                }
+                .headingBlock{
+                    display: flex;
+                    justify-content: space-between;
+                    h1{
+                        font-family: 'Arial';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 35px;
+                        display: flex;
+                        align-items: center;
+                        color: #FFFFFF;
+                    }
+                }
+                .whyText{
+                    p{
+                        font-family: 'Arial';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 27px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+        .whyBottomBlocks{
+            margin-top: 10px;
+        }
+        .whyImage{
+            position: absolute;
+            bottom: -200px;
+            right: 0;
+            z-index: 999;
+        }
+    }
+    .whyButton{
+        position: relative;
+        z-index: 99999;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 57px;
+        button{
+            background: #F7BA4B;
+            border-radius: 100px;
+            border: none;
+            padding: 18px 102px;
+            p{
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 31px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #191919;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .whyBlocks{
+        padding: 0px 30px !important;
+    }
+    .whyTopBlocks, .whyBottomBlocks{
+        flex-wrap: wrap;
+        .whyBlock{
+            margin-right: 0px !important;
+            width: 100% !important;
+            margin-bottom: 10px;
+        }
+    }
+    .whyBottomBlocks{
+        margin-top: 0px !important;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .whyBlockWrapper{
+        margin-bottom: 40px !important;
+    }
+    .headingWhy{
+        h1{
+            font-size: 42px !important;
+            line-height: 45px !important;
+        }
+    }
+    .whyButton{
+        margin: 0px 16px;
+        width: inherit !important;
+        button{
+            p{
+                font-size: 16px !important;
+                line-height: 24px !important;
+            }
+        }
+    }
+    .whyBlock{
+        padding: 16px !important;
+        height: 100% !important;
+        h1{
+            font-size: 24px !important;
+        }
+        br{
+            display: none;
+        }
+    }
+}

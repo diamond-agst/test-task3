@@ -1,0 +1,220 @@
+.whoWrapper{
+    position: relative;
+    margin-bottom: 65px;
+    .whoContainer{
+        padding: 0px 84px;
+        position: relative;
+        z-index: 99999;
+        .whoHeading{
+            border-top: solid 1px #979797; 
+            display: flex;
+            justify-content: space-between;
+            padding-top: 36px;
+            div{
+                border: 1px solid #979797;
+                border-radius: 30px;
+                height: fit-content;
+                padding: 12px 26px;
+                margin-left: 36px;
+                p{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #FFFFFF;
+                }
+            }
+            h1{
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 78px;
+                line-height: 70px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+        .whoTextBlock{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            .whoLeftBlock{
+                margin-right: 160px;
+                .whoImages{
+                    display: flex;
+                    img{
+                        &:not(:nth-child(1)){
+                            margin-left: -30px;
+                        }
+                    }
+                }
+                .whoSubtitle{
+                    margin-top: 60px;
+                    p{
+                        font-family: 'Arial';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 34px;
+                        letter-spacing: 0.5px;
+                        color: #FFD262;
+                    }
+                }
+            }
+            .whoTextContent{
+                p{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 34px;
+                    letter-spacing: 0.5px;
+                    color: #BDBDBD;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+        .whoMessages{
+            margin-bottom: 53px;
+           .whoMessageBlock{
+                display: flex;
+                .whoMessage{
+                    background: #1573FF;
+                    border-radius: 30px;
+                    padding: 12px 36px;
+                    position: relative;
+                    &::after{
+                        content: ''; 
+                        position: absolute;
+                        right: -10px;
+                        bottom: -15px;
+                        border: 15px solid transparent;
+                        border-top: 15px solid #1573FF; 
+                        transform: rotate(-40deg);
+                    }
+                    p{
+                        font-family: 'Arial';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 28px;
+                        letter-spacing: 0.5px;
+                        color: #FFFFFF;
+                    }
+                }
+            } 
+        }
+        .whoButton{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            button{
+                background: #F7BA4B;
+                border-radius: 100px;
+                border: none;
+                padding: 22px 355px;
+                p{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 31px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #191919;
+                }
+            }
+            img{
+                position: absolute;
+                left: -80px;
+                top: -60px;
+            }
+        }
+    }
+    .whoBack{
+        position: absolute;
+        top: -500px;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .whoLeftBlock{
+        margin-right: 0px!important;
+        margin-bottom: 40px;
+        .whoImages{
+            justify-content: center;
+        }
+    }
+    .whoTextBlock{
+        flex-wrap: wrap;
+        .whoSubtitle, .whoTextContent{
+            br{
+                display: none;
+            }
+        }
+    }
+    .whoMessageBlock{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .whoContainer{
+        padding: 0px 30px !important;
+    }
+    .whoHeading{
+        flex-direction: column;
+        div{
+            width: fit-content;
+        }
+    }
+    .whoButton{
+        button{
+            padding: 22px 0px !important;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .whoHeading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            margin-left: 0px !important;
+        }
+        h1{
+            font-size: 52px !important;
+            line-height: 45px !important;
+        }
+        img{
+            display: none;
+        }
+    }
+    .whoImages{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .whoSubtitle{
+        margin-top: 40px !important
+    }
+    .whoTextContent{
+        p{
+            margin-bottom: 25px !important;
+        }
+    }
+    .whoTextContent, .whoSubtitle{
+        p{
+            font-size: 26px !important;
+            line-height: 28px !important;
+        }
+    }
+}

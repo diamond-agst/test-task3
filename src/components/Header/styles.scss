@@ -1,0 +1,178 @@
+.headerWrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 84px;
+    background: rgba(18, 1, 39, 0.6);
+    .logoBlock{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 16px;
+        }
+        h1{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 79px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+    }
+    .headerMenuBlock{
+        display: flex;
+        align-items: center;
+        .headerMenu{
+            display: flex;
+            align-items: center;
+            margin-right: 90px;
+            a{
+                margin-right: 90px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                h2{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 31px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        .headerReg{
+            button{
+                background: #FFD262;
+                border-radius: 10px;
+                border: none;
+                padding: 12px 36px;
+                h2{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 29px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #191919;
+                }
+            }
+        }
+    }
+    .burgerIcon{
+        display: none;
+    }
+    .mobileMenu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(18, 1, 39);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 9999999;
+        overflow: hidden;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+        .mobileHeading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            div{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 45px;
+                    margin-right: 8px;
+                }
+                h1{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .mobileMenuList{
+            padding: 60px 40px;
+            h2{
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 60px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+            }
+        }
+        .mobileMenuButton{
+            padding: 60px 40px;
+            .mobileMenuReg{
+                button{
+                    background: #FFD262;
+                    border-radius: 10px;
+                    border: none;
+                    padding: 12px 36px;
+                    h2{
+                        font-family: 'Arial';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 29px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        color: #191919;
+                    }
+                }
+            }
+        }
+    }
+    .openMenu{
+        transform: translateX(0) !important
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .burgerIcon{
+        display: block !important;
+        cursor: pointer;
+    }
+    .headerMenuBlock{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headerWrapper{
+        padding: 20px 30px;
+        .logoBlock{
+            img{
+                width: 45px;
+                margin-right: 8px !important;
+            }
+            h1{
+                font-size: 20px !important;
+                line-height: 30px !important;
+            }
+        }
+    }
+}

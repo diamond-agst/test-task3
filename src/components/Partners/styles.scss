@@ -1,0 +1,164 @@
+.partnersWrapper{
+    position: relative;
+    padding: 43px 84px;
+    z-index: 9999;
+    .partnersTopBlock{
+        background-image: url("../../assets/images/blurPartners.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .partnersHeadingTop{
+        display: flex;
+        justify-content: space-between;
+         align-items: center;
+         .partnersSubtitle{
+            display: flex;
+            align-items: center;
+            div{
+                border: 1px solid #979797;
+                border-radius: 30px;
+                padding: 12px 40px;
+                margin-right: 81px;
+                p{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .partnersMainHeading{
+            h1{
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 147px;
+                line-height: 110px;
+                letter-spacing: -6.5px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .partnersHeadingBottom{
+        h1{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 147px;
+            line-height: 110px;
+            letter-spacing: -6.5px;
+            color: #FFFFFF;
+            margin-top: 20px;
+        }
+    }
+    .partnersBlocks{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin-top: 70px;
+        .partnersBlock{
+            background: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 135px;
+            &:not(:last-child){
+                margin-right: 3px;
+            }
+        }
+    }
+    .partnersBottomBlock{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #8836AE;
+        border-radius: 25px;
+        padding: 33px 50px;
+        margin-top: 67px;
+        p{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 29px;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+        }
+        img{
+            position: absolute;
+            right: 0;
+            top: -65%;
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .partnersHeadingTop{
+        flex-direction: column;
+        img{
+            display: none;
+        }
+    }
+    .partnersHeadingBottom{
+        text-align: center;
+    }
+    .partnersSubtitle{
+        div{
+            margin-right: 0px !important;
+        }
+    }
+    .partnersBlocks{
+        flex-direction: column;
+        .partnersBlock{
+            width: 100% !important;
+            margin-bottom: 10px;
+        }
+    }
+    .partnersWrapper{
+        padding: 43px 30px;
+    }
+    .partnersMainHeading{
+        margin-top: 20px;
+    }
+    .partnersMainHeading, .partnersHeadingBottom{
+        h1{
+            font-size: 60px !important;
+            line-height: 47px !important;
+            letter-spacing: 1px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .partnersWrapper{
+        padding: 43px 30px 0px;
+    }
+    .partnersBottomBlock{
+        padding: 22px !important;
+        margin-top: 20px !important;
+        p{
+            br{
+                display: none;
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+    .partnersHeadingBottom{
+        h1{
+            margin-top: 0px !important;
+        }
+    }
+}

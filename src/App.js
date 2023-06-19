@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from "react";
+import "./App.scss"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import About from "./components/About";
+import Header from "./components/Header";
+import MainBlock from "./components/MainBlock";
+import News from "./components/News";
+import Organizer from "./components/Organizer";
+import WhoBlock from "./components/WhoBlock";
+import WhyBlock from "./components/WhyBlock";
+import Partners from "./components/Partners";
+import FormBlock from "./components/Form";
+import Contacts from "./components/Contacts";
+import FooterBlock from "./components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () =>{
+  useEffect(() => {
+    AOS.init();
+  }, [])
+  return(
+      <div className="wrapper">
+          <Header/>
+          <div className="container">
+            <MainBlock/>
+            <About/>
+            <WhyBlock/>
+            <WhoBlock/>
+            <News/>
+            <Organizer/>
+            <Partners/>
+            <FormBlock/>
+            <Contacts/>
+            <FooterBlock/>
+          </div>
+          
+      </div>
+  )
 }
 
 export default App;

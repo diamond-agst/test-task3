@@ -1,0 +1,187 @@
+.aboutWrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 23px;
+    .aboutBlock{
+        position: relative;
+        background: #1573FF;
+        width: 1300px;
+        border-radius: 16px;
+        padding: 43px 50px 73px;
+        margin: 0px 84px;
+        margin-bottom: 89px;
+        z-index: 99999;
+        .nameBlock{
+            div{
+                width: fit-content;
+                border: 1px solid #FFFFFF;
+                border-radius: 30px;
+                padding: 8px 26px;
+                p{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .aboutContent{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            .aboutLeftBlock{
+                h1{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 48px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -1.5px;
+                    color: #FFFFFF;
+                }
+                p{
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 34px;
+                    color: #FFFFFF;
+                    margin-top: 30px;
+                }
+            }
+            .aboutRightBlock{
+                .aboutImagesBlock{
+                    img{
+                            margin-left: -30px;
+                    }
+                }
+                .aboutRightText{
+                    p{
+                        font-family: 'Arial';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 34px;
+                        color: #FFFFFF;
+                        margin-top: 55px;
+                    }
+                }
+            }
+        }
+        .aboutStar{
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+        }
+        .aboutWhiteStar{
+            position: absolute;
+            top: -30px;
+            right: -30px;
+        }
+        .aboutRub{
+            position: absolute;
+            bottom: -70px;
+            right: -100px;
+        }
+    }
+    .aboutButton{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button{
+            background: transparent;
+            border: 1px solid #979797;
+            border-radius: 30px;
+            width: fit-content;
+            p{
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                padding: 10px 26px;
+            }
+        }
+    }
+    .backAbout{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .aboutWrapper{
+        .aboutBlock{
+            width: 95% !important;
+            .aboutContent{
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .aboutWrapper{
+        br{
+            display: none;
+        }
+        .aboutImagesBlock{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .aboutBlock{
+        padding: 16px !important;
+        .aboutRightBlock{
+            .aboutImagesBlock{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    .aboutContent{
+        margin-top: 16px !important;
+    }
+    .aboutRightText{
+        p{
+            margin-top: 16px !important;
+        }
+    }
+    .aboutImagesBlock{
+        margin-top: 16px !important;
+    }
+    .aboutLeftBlock, .aboutRightBlock{
+        h1{
+            font-size: 32px !important;
+            line-height: 36px !important;
+        }
+        p{
+            font-size: 16px !important;
+            line-height: 24px !important;
+        }
+    }
+}
